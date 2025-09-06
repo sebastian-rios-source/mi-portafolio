@@ -6,12 +6,17 @@
 <title>Portafolio Digital - Sebastián Ríos Espinosa</title>
 <script src="https://cdn.tailwindcss.com"></script>
 <style>
+
+html {
+    scroll-behavior: smooth; 
+}
+
 .fade-in { animation: fadeIn 1.2s ease-in-out; }
 @keyframes fadeIn { 0% { opacity:0; transform:translateY(20px);} 100%{opacity:1; transform:translateY(0);} }
 .project a.button { background-color:#1D4ED8; color:white; padding:0.5rem 1rem; border-radius:0.375rem; display:inline-block; margin-top:0.5rem; text-decoration:none; }
 .project a.button:hover { background-color:#2563EB; }
 
-/* Nuevo estilo para el efecto de zoom en las imágenes */
+
 .image-hover-scale {
     transition: transform 0.3s ease-in-out;
 }
@@ -20,7 +25,7 @@
 }
 </style>
 </head>
-<body class="bg-gray-50 text-gray-800 scroll-smooth">
+<body class="bg-gray-50 text-gray-800">
 
 <header class="bg-white shadow-md fixed top-0 w-full z-50">
   <nav class="max-w-6xl mx-auto flex justify-between items-center p-4">
