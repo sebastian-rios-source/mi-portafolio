@@ -1,44 +1,169 @@
-<!-- Contacto: contacto.html -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portafolio Digital - Contacto</title>
+<title>Portafolio Digital - Sebastián Ríos Espinosa</title>
 <script src="https://cdn.tailwindcss.com"></script>
 <style>
 .fade-in { animation: fadeIn 1.2s ease-in-out; }
 @keyframes fadeIn { 0% { opacity:0; transform:translateY(20px);} 100%{opacity:1; transform:translateY(0);} }
-.contact-item img { width: 32px; height: 32px; margin-right: 12px; }
-.contact-item:hover { color: #1D4ED8; transition: all 0.3s; }
+.project a.button { background-color:#1D4ED8; color:white; padding:0.5rem 1rem; border-radius:0.375rem; display:inline-block; margin-top:0.5rem; text-decoration:none; }
+.project a.button:hover { background-color:#2563EB; }
 </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-gray-50 text-gray-800 scroll-smooth">
+
 <header class="bg-white shadow-md fixed top-0 w-full z-50">
   <nav class="max-w-6xl mx-auto flex justify-between items-center p-4">
     <h1 class="text-2xl font-bold text-blue-600">Portafolio Digital</h1>
     <div class="space-x-6">
-      <a href="index.html" class="hover:text-blue-600 transition">Quién Soy</a>
-      <a href="experiencia.html" class="hover:text-blue-600 transition">Experiencia</a>
-      <a href="habilidades.html" class="hover:text-blue-600 transition">Habilidades</a>
-      <a href="proyectos.html" class="hover:text-blue-600 transition">Proyectos</a>
-      <a href="contacto.html" class="hover:text-blue-600 transition">Contacto</a>
+      <a href="#quien-soy" class="hover:text-blue-600 transition">Quién Soy</a>
+      <a href="#experiencia" class="hover:text-blue-600 transition">Experiencia</a>
+      <a href="#habilidades" class="hover:text-blue-600 transition">Habilidades</a>
+      <a href="#proyectos" class="hover:text-blue-600 transition">Proyectos</a>
+      <a href="#contacto" class="hover:text-blue-600 transition">Contacto</a>
     </div>
   </nav>
 </header>
-<section class="fade-in pt-28 max-w-6xl mx-auto px-6 py-20">
+
+<section id="quien-soy" class="fade-in pt-28 max-w-6xl mx-auto px-6 py-20 flex flex-col md:flex-row items-center">
+  <div class="md:w-1/2 mb-6 md:mb-0">
+    <img src="https://source.unsplash.com/400x400/?computer,technology" alt="Informático" class="rounded-lg shadow-lg" />
+  </div>
+  <div class="md:w-1/2 md:pl-12">
+    <h2 class="text-4xl font-bold mb-4">¿Quién soy?</h2>
+    <p>Soy Sebastián Ríos Espinosa, Ingeniero Civil en Informática egresado de la Universidad del Bío-Bío, con experiencia laboral enfocada principalmente en el sector público. Mi trayectoria se ha desarrollado en roles de coordinación y gestión, destacando mi habilidad para supervisar proyectos informáticos y asegurar la continuidad operacional de sistemas.</p>
+  </div>
+</section>
+
+<section id="experiencia" class="fade-in max-w-6xl mx-auto px-6 py-20">
+  <h2 class="text-4xl font-bold mb-6">¿Cuál es mi experiencia laboral?</h2>
+  <p>Mi experiencia profesional se ha desarrollado casi por completo en el sector público. Mi puesto más reciente fue como <strong>Coordinador Regional de Informática en la SEREMI de Educación de Ñuble</strong>. Durante este periodo, mis funciones clave incluyeron:</p>
+  <ul class="list-disc ml-6 mt-4 space-y-2">
+    <li>Gestionar y supervisar procesos relacionados con el área informática de la Secretaría Regional Ministerial y su jurisdicción.</li>
+    <li>Garantizar la correcta implementación y continuidad operacional de los sistemas y tecnologías de la información y comunicación a nivel regional y provincial.</li>
+    <li>Gestionar y supervisar el soporte informático.</li>
+    <li>Asesorar a la autoridad regional en materias del área para proyectar requerimientos informáticos a nivel central.</li>
+  </ul>
+</section>
+
+<section id="habilidades" class="fade-in max-w-6xl mx-auto px-6 py-20 flex flex-col md:flex-row items-center">
+  <div class="md:w-1/2 mb-6 md:mb-0">
+    <img src="https://source.unsplash.com/400x400/?technology,server" alt="Habilidades" class="rounded-lg shadow-lg" />
+  </div>
+  <div class="md:w-1/2 md:pl-12">
+    <h2 class="text-4xl font-bold mb-4">Habilidades</h2>
+    <p>Soy un Ingeniero Civil en Informática con una sólida experiencia en la administración de sistemas y la gestión de proyectos en el sector público. Mi trayectoria como <strong>Coordinador Regional de Informática en la SEREMI de Educación de Ñuble</strong> me ha proporcionado una perspectiva integral en la supervisión de procesos, el aseguramiento de la continuidad operacional de sistemas y la coordinación de soporte informático.</p>
+    <p class="mt-4">Poseo habilidades en la implementación y gestión de servidores <strong>Windows y Linux</strong>, así como en la configuración de servicios en la nube con <strong>Amazon Web Services (AWS)</strong>. Experto en redes, bases de datos y prácticas de seguridad, lo que me permite diseñar y mantener entornos tecnológicos estables y resilientes.</p>
+  </div>
+</section>
+
+<section id="proyectos" class="fade-in max-w-6xl mx-auto px-6 py-20">
+  <h2 class="text-4xl font-bold mb-6">Proyectos</h2>
+  <div class="space-y-12">
+
+    <!-- Proyecto 1 -->
+    <div class="project flex flex-col md:flex-row items-center">
+      <div class="md:w-1/2">
+        <h3 class="text-2xl font-semibold">Roles en Windows Server</h3>
+        <p>Este proyecto demuestra mi habilidad para configurar roles esenciales en un servidor Windows, como Active Directory, DHCP y DNS, incluyendo servidor de impresión y archivos.</p>
+        <a href="Rios%20Espinosa%20-%20Roles%20en%20Windows%20Server.pdf" target="_blank" class="button">Ver Proyecto</a>
+      </div>
+      <div class="md:w-1/2 md:pl-6 mt-4 md:mt-0">
+        <img src="https://source.unsplash.com/400x250/?windows,server" alt="Roles Windows Server" class="rounded-lg shadow-lg" />
+      </div>
+    </div>
+
+    <!-- Proyecto 2 -->
+    <div class="project flex flex-col md:flex-row items-center">
+      <div class="md:w-1/2">
+        <h3 class="text-2xl font-semibold">Comandos para la Administración de procesos en Linux</h3>
+        <p>Gestión avanzada de archivos, directorios y permisos en Linux, aplicando comandos y enlaces simbólicos para optimizar la administración de procesos.</p>
+        <a href="Rios%20Espinosa%20-%20Desafío%20Comandos%20para%20la%20Administración%20de%20procesos%20en%20Linux.pdf" target="_blank" class="button">Ver Proyecto</a>
+      </div>
+      <div class="md:w-1/2 md:pl-6 mt-4 md:mt-0">
+        <img src="https://source.unsplash.com/400x250/?linux,terminal" alt="Linux Comandos" class="rounded-lg shadow-lg" />
+      </div>
+    </div>
+
+    <!-- Proyecto 3 -->
+    <div class="project flex flex-col md:flex-row items-center">
+      <div class="md:w-1/2">
+        <h3 class="text-2xl font-semibold">Instalación y Configuración de Linux</h3>
+        <p>Instalación y configuración de una máquina virtual Linux Mint, adaptando el entorno a necesidades del usuario y personalizando la interfaz gráfica.</p>
+        <a href="Rios%20Espinosa%20-%20Desafío%20Instalación%20y%20Configuración%20de%20Linux.pdf" target="_blank" class="button">Ver Proyecto</a>
+      </div>
+      <div class="md:w-1/2 md:pl-6 mt-4 md:mt-0">
+        <img src="https://source.unsplash.com/400x250/?linux,computer" alt="Instalación Linux" class="rounded-lg shadow-lg" />
+      </div>
+    </div>
+
+    <!-- Proyecto 4 -->
+    <div class="project flex flex-col md:flex-row items-center">
+      <div class="md:w-1/2">
+        <h3 class="text-2xl font-semibold">Prácticas de Seguridad en Windows Server I</h3>
+        <p>Implementación de políticas de seguridad en Windows Server para proteger datos y usuarios, incluyendo directivas de contraseñas y bloqueo de cuentas.</p>
+        <a href="srios%20-%20Prácticas%20de%20seguridad%20Windows%20Server%20I.pdf" target="_blank" class="button">Ver Proyecto</a>
+      </div>
+      <div class="md:w-1/2 md:pl-6 mt-4 md:mt-0">
+        <img src="https://source.unsplash.com/400x250/?cybersecurity,windows" alt="Seguridad Windows Server" class="rounded-lg shadow-lg" />
+      </div>
+    </div>
+
+    <!-- Proyecto 5 -->
+    <div class="project flex flex-col md:flex-row items-center">
+      <div class="md:w-1/2">
+        <h3 class="text-2xl font-semibold">Servicios de Redes y Entrega de Contenidos</h3>
+        <p>Implementación de servicios de red en la nube utilizando AWS, creando VPC y usando CDN para optimizar velocidad y rendimiento.</p>
+        <a href="ServiciosdeRedes_srios.pdf" target="_blank" class="button">Ver Proyecto</a>
+      </div>
+      <div class="md:w-1/2 md:pl-6 mt-4 md:mt-0">
+        <img src="https://source.unsplash.com/400x250/?aws,cloud" alt="Servicios de Redes AWS" class="rounded-lg shadow-lg" />
+      </div>
+    </div>
+
+    <!-- Proyecto 6 -->
+    <div class="project flex flex-col md:flex-row items-center">
+      <div class="md:w-1/2">
+        <h3 class="text-2xl font-semibold">Servicios de Base de Datos e Implementación de WordPress con Amazon RDS</h3>
+        <p>Implementación de MySQL con Amazon RDS y posterior integración con WordPress, demostrando habilidades en bases de datos y aplicaciones en la nube.</p>
+        <a href="basededatos_srios.pdf" target="_blank" class="button">Ver Proyecto</a>
+      </div>
+      <div class="md:w-1/2 md:pl-6 mt-4 md:mt-0">
+        <img src="https://source.unsplash.com/400x250/?database,wordpress" alt="Base de Datos AWS" class="rounded-lg shadow-lg" />
+      </div>
+    </div>
+
+    <!-- Proyecto 7 -->
+    <div class="project flex flex-col md:flex-row items-center">
+      <div class="md/w-1/2">
+        <h3 class="text-2xl font-semibold">Manejo de Archivos y Procesos en Linux (Copia)</h3>
+        <p>Administración avanzada de sistemas Linux, manipulando archivos, directorios y procesos de forma eficiente con comandos y enlaces.</p>
+        <a href="Rios%20Espinosa%20-%20Desafío%20Comandos%20para%20la%20Administración%20de%20procesos%20en%20Linux%20-%20copia.pdf" target="_blank" class="button">Ver Proyecto</a>
+      </div>
+      <div class="md/w-1/2 md:pl-6 mt-4 md:mt-0">
+        <img src="https://source.unsplash.com/400x250/?linux,files" alt="Archivos Linux" class="rounded-lg shadow-lg" />
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="contacto" class="fade-in max-w-6xl mx-auto px-6 py-20">
   <h2 class="text-4xl font-bold mb-6">Contacto</h2>
   <p class="mb-8">Puedes contactarme a través de los siguientes medios:</p>
   <div class="flex flex-col space-y-4">
-    <div class="contact-item flex items-center">
-      <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Gmail" />
+    <div class="flex items-center">
+      <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Gmail" class="w-8 h-8 mr-3" />
       <span>sebastianriosespinosa@gmail.com</span>
     </div>
-    <div class="contact-item flex items-center">
-      <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" />
+    <div class="flex items-center">
+      <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" class="w-8 h-8 mr-3" />
       <span>linkedin.com/in/sebastián-ríos-87854a192</span>
     </div>
   </div>
 </section>
+
 </body>
 </html>
